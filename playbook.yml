@@ -4,10 +4,10 @@
   vars:
     ansible_python_interpreter: /opt/homebrew/bin/python3
   tasks:
-    - name: Start docker service
-      service:
-        name: docker
-        state: started
+    # - name: Start docker service
+    #   service:
+    #     name: docker
+    #     state: started
     - name: Pull frontend image
       docker_image:
         name: pennypilot-frontend:latest
@@ -25,22 +25,22 @@
     # - name: install docker-compose
     #   shell: pip3 install docker-compose
    # to be added next below 3 task
-    # - name: deploy Docker Compose stack
-    #   community.docker.docker_compose:
-    #     project_src: /Users/balajibabasahebsankapal/Desktop/PennyPilot
-    #     files:
-    #     - docker-compose.yml
-    # - name: Copy Docker Compose file from host machine
-    #   copy:
-    #     src: ./docker-compose.yml
-    #     dest: /Users/balajibabasahebsankapal/Desktop/PennyPilot/docker-compose.yml
+    - name: deploy Docker Compose stack
+      community.docker.docker_compose:
+        project_src: /Users/balajibabasahebsankapal/Desktop/PennyPilot
+        files:
+        - docker-compose.yml
+    - name: Copy Docker Compose file from host machine
+      copy:
+        src: ./docker-compose.yml
+        dest: /Users/balajibabasahebsankapal/Desktop/PennyPilot/docker-compose.yml
 
-    # # use files parameter to use multiple docker-compose.yml files
-    # - name: deploy Docker Compose stack
-    #   community.docker.docker_compose:
-    #     project_src: /Users/balajibabasahebsankapal/Desktop/PennyPilot
-    #     files:
-    #     - docker-compose.yml
+    # use files parameter to use multiple docker-compose.yml files
+    - name: deploy Docker Compose stack
+      community.docker.docker_compose:
+        project_src: /Users/balajibabasahebsankapal/Desktop/PennyPilot
+        files:
+        - docker-compose.yml
 
     # - name: Pull Frontend image
     #   docker_image:
