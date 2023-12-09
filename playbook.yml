@@ -10,11 +10,11 @@
     #     state: started
     - name: Pull frontend image
       docker_image:
-        name: pennypilot-frontend:latest
+        name: bsankapal/pennypilot-frontend:latest
         source: pull
     - name: Pull backend image
       docker_image:
-        name: pennypilot-backend:latest
+        name: bsankapal/pennypilot-backend:latest
         source: pull
     
     # - name: pull frontend docker image
