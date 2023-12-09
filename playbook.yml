@@ -2,24 +2,24 @@
 - name: Deploying Project.
   hosts: localhost
   tasks:
-    # - name: Start docker service
-    #   service:
-    #     name: docker
-    #     state: started
+    - name: Start docker service
+      service:
+        name: docker
+        state: started
 
-    # - name: pull frontend docker image
-    #   shell: /usr/local/bin/docker pull docker.io/gaparul/sangam-alumniportal-frontend:latest
+    - name: pull frontend docker image
+      shell: /usr/local/bin/docker pull docker.io/bsankapal/pennypilot-frontend:latest
 
-    # - name: pull backend docker image
-    #   shell: /usr/local/bin/docker pull docker.io/gaparul/sangam-alumniportal-backend:latest
-    # - name: install docker-compose
-    #   shell: pip3 install docker-compose
+    - name: pull backend docker image
+      shell: /usr/local/bin/docker pull docker.io/bsankapal/pennypilot-backend:latest
+    - name: install docker-compose
+      shell: pip3 install docker-compose
 
-    # - name: deploy Docker Compose stack
-    #   community.docker.docker_compose:
-    #     project_src: /Users/harsh/Desktop/Sangam-AlumniPortal
-    #     files:
-    #     - docker-compose.yml
+    - name: deploy Docker Compose stack
+      community.docker.docker_compose:
+        project_src: /Users/balajibabasahebsankapal/Desktop/PennyPilot
+        files:
+        - docker-compose.yml
     - name: Copy Docker Compose file from host machine
       copy:
         src: ./docker-compose.yml
