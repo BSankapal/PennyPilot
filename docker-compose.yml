@@ -1,9 +1,9 @@
 version: "3"
 services:
-  # mymongodb:
-  #   image: mongo
-  #   ports:
-  #     - "27017:27017"
+  mymongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
   backend:
     build:
       dockerfile: Dockerfile
