@@ -24,9 +24,9 @@ services:
     env_file:
       - ./backend/.env
     volumes:
-      - ./frontend/build:/pennypilot/frontend/build
-      - ./backend:/pennypilot
-      # - /backend/node_modules
+      - ./backend:/backend
+      - /backend/node_modules
+      # - ./frontend/build:/pennypilot/frontend/build
     networks:
       - finance
   frontend:
@@ -39,9 +39,8 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./frontend:/pennypilot
-      # - ./frontend:/frontend
-      # - /frontend/node_modules
+      - ./frontend:/frontend
+      - /frontend/node_modules
     networks:
       - finance
     depends_on:
