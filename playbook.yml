@@ -1,6 +1,6 @@
 ---
 - name: Deploying Project.
-  hosts: all
+  hosts: localhost
   vars:
     ansible_python_interpreter: /opt/homebrew/bin/python3
   tasks:
