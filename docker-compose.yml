@@ -5,7 +5,7 @@ services:
     # restart: always
     image: mongo:7
     ports:
-      - "27018:27017"
+      - "27017:27017"
     # environment:
     #    MONGO_INITDB_ROOT_USERNAME: ash 
     #    MONGO_INITDB_ROOT_PASSWORD: 123  
