@@ -5,6 +5,7 @@ const dotenv = require("dotenv");
 const colors = require("colors");
 const path = require("path");
 const connectDb = require("./config/connectDb");
+const logger = require('./logger');
 // config dot env file
 dotenv.config();
 
@@ -37,5 +38,6 @@ const PORT = 8082 || process.env.PORT;
 
 //listen server
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  // console.log(`Server running on port ${PORT}`);
+  logger.info("Server is running on port " + PORT);
 });
