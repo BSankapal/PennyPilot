@@ -1,0 +1,37 @@
+2023-12-12T17:27:10.156Z  error: getaddrinfo ENOTFOUND mongo
+2023-12-12T17:33:10.904Z  info: Server is running on port 8082
+2023-12-12T17:33:40.796Z  error: getaddrinfo ENOTFOUND mongo
+2023-12-12T17:34:33.662Z  error: getaddrinfo ENOTFOUND mongo
+2023-12-12T17:35:40.602Z  info: Server is running on port 8082
+2023-12-12T17:36:10.389Z  error: getaddrinfo ENOTFOUND mongo
+2023-12-12T17:41:53.824Z  info: Server is running on port 8082
+2023-12-12T17:42:23.625Z  error: getaddrinfo ENOTFOUND mongo
+2023-12-12T17:43:34.689Z  info: Server is running on port 8082
+2023-12-12T17:44:04.490Z  error: getaddrinfo ENOTFOUND mongo
+2023-12-12T17:53:10.375Z  info: Server is running on port 8082
+2023-12-12T17:53:40.204Z  error: getaddrinfo ENOTFOUND mongo
+2023-12-12T17:54:02.927Z  info: Server is running on port 8082
+2023-12-12T17:54:32.713Z  error: getaddrinfo ENOTFOUND mongo
+2023-12-12T17:55:21.953Z  info: Server is running on port 8082
+2023-12-12T17:55:51.731Z  error: getaddrinfo ENOTFOUND mongo
+2023-12-12T17:58:27.331Z  info: Server is running on port 8082
+2023-12-12T17:58:37.377Z  error: Operation `users.findOne()` buffering timed out after 10000ms
+2023-12-12T17:58:57.223Z  error: getaddrinfo ENOTFOUND mongo
+2023-12-12T17:59:26.290Z  info: Server is running on port 8082
+2023-12-12T17:59:36.343Z  error: Operation `users.findOne()` buffering timed out after 10000ms
+2023-12-12T17:59:56.163Z  error: getaddrinfo ENOTFOUND mongo
+2023-12-12T18:02:15.462Z  info: Server is running on port 8082
+2023-12-12T18:02:25.540Z  error: Operation `users.findOne()` buffering timed out after 10000ms
+2023-12-12T18:02:45.024Z  error: getaddrinfo ENOTFOUND mongo
+2023-12-12T18:04:28.527Z  error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2023-12-12T18:04:28.565Z  info: Server is running on port 8082
+2023-12-12T18:04:38.621Z  error: Operation `users.findOne()` buffering timed out after 10000ms
+2023-12-12T18:05:54.802Z  error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2023-12-12T18:05:54.844Z  info: Server is running on port 8082
+2023-12-12T18:06:04.901Z  error: Operation `users.findOne()` buffering timed out after 10000ms
+2023-12-12T18:10:46.019Z  error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2023-12-12T18:10:46.037Z  info: Server is running on port 8082
+2023-12-12T18:10:56.077Z  error: Operation `users.findOne()` buffering timed out after 10000ms
+2023-12-12T18:20:11.151Z  error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2023-12-12T18:20:11.208Z  info: Server is running on port 8082
+2023-12-12T18:20:21.277Z  error: Operation `users.findOne()` buffering timed out after 10000ms
