@@ -6,8 +6,8 @@
   tasks:
     - name: Build and start containers
       command: "docker-compose up -d"
-    - name: Prune the dangling docker images
-      command: docker image prune --force
+    # - name: Prune the dangling docker images
+    #   command: docker image prune --force
     # - name: Start docker service
     #   service:
     #     name: docker
