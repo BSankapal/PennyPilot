@@ -6,6 +6,8 @@ services:
     image: mongo:latest
     ports:
       - "27017:27017"
+    networks:
+      - finance
     # environment:
     #    MONGO_INITDB_ROOT_USERNAME: ash 
     #    MONGO_INITDB_ROOT_PASSWORD: 123  
