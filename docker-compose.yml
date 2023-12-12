@@ -1,6 +1,6 @@
 version: "3"
 services:
-  mongo_db:
+  mongo:
     container_name: mongo_service
     restart: always
     image: mongo:latest
@@ -21,11 +21,11 @@ services:
     image: bsankapal/pennypilot-backend
     ports:
       - "8082:8082"
-    environment:
-      PORT: 8082
-      MONGODB: mongodb://mongo_db:27017
+    # environment:
+    #   PORT: 8082
+    #   MONGODB: mongodb://mongo:27017
     depends_on:
-      - mongo_db
+      - mongo
     env_file:
       - ./backend/.env
     volumes:
