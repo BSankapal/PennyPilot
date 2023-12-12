@@ -35,3 +35,58 @@
 2023-12-12T18:20:11.151Z  error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
 2023-12-12T18:20:11.208Z  info: Server is running on port 8082
 2023-12-12T18:20:21.277Z  error: Operation `users.findOne()` buffering timed out after 10000ms
+2023-12-12T18:45:39.241Z  error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2023-12-12T18:45:39.253Z  info: Server is running on port 8082
+2023-12-12T18:45:49.282Z  error: Operation `users.findOne()` buffering timed out after 10000ms
+2023-12-12T18:47:07.640Z  info: Server is running on port 8082
+2023-12-12T18:47:08.159Z  info: Connected to Database
+2023-12-12T18:47:08.348Z  warn: User Not Found
+2023-12-12T18:51:25.288Z  info: Server is running on port 8082
+2023-12-12T18:51:25.671Z  info: Connected to Database
+2023-12-12T18:51:25.873Z  info: User Found - Login Successful
+2023-12-12T18:53:56.272Z  info: Server is running on port 8082
+2023-12-12T18:53:56.753Z  info: Connected to Database
+2023-12-12T18:53:56.942Z  info: User Found - Login Successful
+2023-12-12T18:53:56.996Z  warn: User Not Found
+2023-12-12T18:53:57.035Z  warn: User Not Found
+2023-12-12T18:55:19.823Z  info: Server is running on port 8082
+2023-12-12T18:55:20.284Z  info: Connected to Database
+2023-12-12T18:55:20.471Z  info: User Found - Login Successful
+2023-12-12T18:55:20.519Z  warn: User Not Found
+2023-12-12T18:55:20.559Z  warn: User Not Found
+2023-12-12T18:56:00.752Z  info: Server is running on port 8082
+2023-12-12T18:56:01.150Z  info: Connected to Database
+2023-12-12T18:56:01.359Z  info: User Found - Login Successful
+2023-12-12T18:56:01.411Z  warn: User Not Found
+2023-12-12T18:56:01.450Z  warn: User Not Found
+2023-12-12T18:56:36.832Z  info: Server is running on port 8082
+2023-12-12T18:56:37.404Z  info: Connected to Database
+2023-12-12T18:56:37.585Z  info: User Found - Login Successful
+2023-12-12T18:56:37.677Z  warn: User Not Found
+2023-12-12T18:56:37.709Z  warn: User Not Found
+2023-12-12T19:06:16.884Z  info: Server is running on port 8082
+2023-12-12T19:06:17.467Z  info: Connected to Database
+2023-12-12T19:06:17.688Z  info: User Found - Login Successful
+2023-12-12T19:06:17.741Z  warn: User Not Found
+2023-12-12T19:06:17.786Z  warn: User Not Found
+2023-12-12T19:10:21.134Z  info: Server is running on port 8082
+2023-12-12T19:10:21.582Z  info: Connected to Database
+2023-12-12T19:10:21.773Z  info: User Found - Login Successful
+2023-12-12T19:10:21.823Z  warn: User Not Found
+2023-12-12T19:10:21.856Z  warn: User Not Found
+2023-12-12T19:10:21.891Z  error: Client must be connected before running operations
+2023-12-12T19:10:21.919Z  error: Client must be connected before running operations
+2023-12-12T19:14:15.293Z  info: Server is running on port 8082
+2023-12-12T19:14:15.750Z  info: Connected to Database
+2023-12-12T19:14:15.935Z  info: User Found - Login Successful
+2023-12-12T19:14:15.988Z  warn: User Not Found
+2023-12-12T19:14:16.021Z  warn: User Not Found
+2023-12-12T19:14:16.056Z  error: Client must be connected before running operations
+2023-12-12T19:14:16.081Z  error: Client must be connected before running operations
+2023-12-12T19:18:21.672Z  info: Server is running on port 8082
+2023-12-12T19:18:22.242Z  info: Connected to Database
+2023-12-12T19:18:22.422Z  info: User Found - Login Successful
+2023-12-12T19:18:22.467Z  warn: User Not Found
+2023-12-12T19:18:22.497Z  warn: User Not Found
+2023-12-12T19:18:22.529Z  error: Client must be connected before running operations
+2023-12-12T19:18:22.550Z  error: Client must be connected before running operations

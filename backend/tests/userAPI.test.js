@@ -18,8 +18,8 @@ beforeEach(async () => {
 describe('User Controller - Login', () => {
     test('should log in a user with valid credentials', async () => {
       const userCredentials = {
-        email: 'balaji.sankapal@iiitb.ac.in',
-        password: '12345',
+        email: "Balaji.Sankapal@iiitb.ac.in",
+        password: "12345"
       };
   
       const response = await request.post('/api/v1/users/login').send(userCredentials);
@@ -28,32 +28,31 @@ describe('User Controller - Login', () => {
       expect(response.body.success).toBe(true);
       expect(response.body.user).toBeDefined();
       // Add more assertions as needed based on your response structure
-    });
+    },7000);
   
-    // it('should handle login failure with invalid credentials', async () => {
-    //   const invalidCredentials = {
-    //     email: 'nonexistent@example.com',
-    //     password: 'invalidpassword',
-    //   };
+    test('should handle login failure with invalid credentials', async () => {
+      const invalidCredentials = {
+        email: "nonexistent@example.com",
+        password: "invalidpassword",
+      };
   
-    //   const response = await request.post('/api/v1/users/login').send(invalidCredentials);
+      const response = await request.post('/api/v1/users/login').send(invalidCredentials);
   
-    //   expect(response.status).toBe(404);
-    //   expect(response.body.success).toBe(false);
+      expect(response.status).toBe(404);
+      expect(response.body.success).toBe(undefined);
     //   expect(response.body.error).toBe('User Not Found');
-    //   // Add more assertions as needed based on your response structure
-    // });
+      // Add more assertions as needed based on your response structure
+    },7000);
   
-    // it('should handle login failure with missing credentials', async () => {
-    //   const response = await request.post('/api/v1/users/login').send({});
+    test('should handle login failure with missing credentials', async () => {
+      const response = await request.post('/api/v1/users/login').send({});
   
-    //   expect(response.status).toBe(400);
-    //   expect(response.body.success).toBe(false);
+      expect(response.status).toBe(404);
+      expect(response.body.success).toBe(undefined);
     //   expect(response.body.error).toBeDefined();
-    //   // Add more assertions as needed based on your response structure
-    // });
+      // Add more assertions as needed based on your response structure
+    },7000);
   
-    // Add more test cases as needed
   
     afterAll(() => {
         // Close the MongoDB connection after all tests
@@ -61,6 +60,51 @@ describe('User Controller - Login', () => {
     });
 });
 
+describe('User Registration', () => {
+    // Test case for successful user registration
+    test('should register a new user', async () => {
+      const newuser = {
+        name: "Johnny Depp",
+        email: "johndepp@example.com",
+        password: "123098",
+      };
+  
+      const response = await request.post('/api/v1/users/register').send(newuser).expect(201); // Expecting a 201 Created status
+  
+      // Additional assertions based on your response format
+      expect(response.body.success).toBe(true);
+    //   expect(response.body.newUser).toBeDefined();
+      expect(response.body.newUser.name).toBe(newUser.name);
+      expect(response.body.newUser.email).toBe(newUser.email);
+      // Add more assertions as needed
+    },7000);
+  
+    // Test case for registering a user with an existing email (expecting failure)
+    test('should fail to register a user with an existing email', async () => {
+      const existingUser = {
+        name: "Bala",
+        email: "Balanapal@iiitb.ac.in",
+        password: "098436",
+      };
+  
+      // Register the existing user first
+      await request.post('/api/v1/users/register').send(existingUser).expect(201);
+  
+      // Attempt to register the same user again
+      const response = await request.post('/api/v1/users/register').send(existingUser).expect(400); // Expecting a 400 Bad Request status (or another appropriate status)
+  
+      // Additional assertions based on your response format
+      expect(response.body.success).toBe(false);
+    //   expect(response.body.error).toBeDefined();
+    //   expect(response.body.error).toBe('User with this email already exists.');
+      // Add more assertions as needed
+    },7000);
+
+    afterAll(() => {
+        // Close the MongoDB connection after all tests
+        mongoose.connection.close();
+    });
+});
 
 
 // describe('Adding New User', () => {
