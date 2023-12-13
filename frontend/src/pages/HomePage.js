@@ -7,10 +7,11 @@ import {
   DeleteOutlined,
 } from "@ant-design/icons";
 import Layout from "./../components/Layout/Layout";
-import axios from "axios";
+import axios from 'axios';
 import Spinner from "./../components/Spinner";
 import moment from "moment";
 import Analytics from "../components/Analytics";
+
 const { RangePicker } = DatePicker;
 
 const HomePage = () => {

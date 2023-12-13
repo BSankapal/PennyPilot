@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "antd/dist/antd.min.css";
 import "./index.css";
 import App from "./App";
+import Login from "./pages/Login";
 import { BrowserRouter } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
